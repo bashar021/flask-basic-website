@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c6e6f5;
+    color: #11314a;
+    padding: 5px;
+    text-align: center;
+}
+
+header h1 {
+    position: relative;
+    top: 10px;
+    font-size: 50px;
+}
+
+.logo img {
+    border-radius: 50%;
+    /* border: 2px solid; */
+    width: 142px;
+    height: 142px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #11314a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+    padding: 20px;
+    /* margin: 20px; */
+}
+
+nav li a {
+    margin: 20px;
+    color: #c6e6f5;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.image-upload {
+    padding: 20px;
+    margin: 20px;
+    /* width: 80%; */
+    /* display: flex; */
+
+    justify-content: space-around;
+}
+
+.image-upload #about {
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 90%; */
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    padding: 25px 75px;
+    margin: 25px 75px;
+    gap: 170px;
+}
+
+.image-upload #about #para {
+    padding: 20px;
+}
+
+.image-upload #about #sideimage {
+    position: relative;
+    left: 20px;
+}
+
+.image-upload #img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 45px;
+    /* width: 80%; */
+    margin: 20px;
+    padding: 20px;
+
+}
+
+#img .right {
+    /* width: 125%; */
+}
+
+#img .box {
+    /* width: 125%; */
+    /* border: 2px s;  */
+    padding: 2px;
+    /* margin: 3px 0px; */
+    font-size: 21px;
+    border-radius: 28px;
+    /* background: cornsilk; */
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-family: 'Baloo Bhai', cursive;
+    box-shadow: 7px 5px 10px #11314a;
+}
+
+#img .box h4 {
+    text-align: center;
+}
+
+#img .box .bottom {
+    margin: 20px;
+}
+
+/* #img #image-upload{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: #11314a;
+    color: #c6e6f5;
+} */
+input[type="file"] {
+    /* width: 20px; */
+    display: block;
+    margin-bottom: 10px;
+
+    /* box-shadow:  #11314a; */
+}
+
+/* input[type="file"],
+textarea,
+button {
+    display: block;
+    margin-bottom: 10px;
+} */
+#chat {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(medical-bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 445px;
+    align-items: right;
+}
+
+.chat {
+    position: relative;
+    border: #c6e6f5;
+    border-radius: 20px;
+    box-shadow: 7px 5px 10px #11314a;
+    width: 45%;
+    height: 80%;
+    /* height: 100%; */
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.chat textarea {
+    background-color: #c6e6f5;
+    /* height: 450px; */
+    width: 80%;
+    height: 250px;
+}
+
+.chat button {
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 7px;
+    height: 33px;
+    width: 100px;
+    background-color: #c6e6f5;
+    color: #11314a;
+    box-shadow: 7px 5px 10px #11314a;
+
+}
+
+.chat button:hover {
+    background-color: #11314a;
+    color: #c6e6f5;
+}
+
+footer {
+
+    background-color: #11314a;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+}

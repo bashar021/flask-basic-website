@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Diagnostic Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- <img src="logo.png" alt="Logo"> -->
+            <img src="{{ url_for('static', filename='image 1.png') }}" alt="Logo">
+        </div>
+        <div class="heading">
+            <h1>SymptomSmart</h1>
+            <span style="position: relative ;color: red; left: 165px;">
+                <h4>"Empowering Home Diagnosis"</h4>
+            </span>
+        </div>
+
+    </header>
+    <nav>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#img">Upload Image</a></li>
+        <li><a href="#chat">Contact Us</a></li>
+    </nav>
+
+    <main>
+
+        <section class="image-upload">
+            <div id="about">
+                <div class="para" id="para">
+                    <h2>About Us</h2>
+                    <p>Our website serves as a hub of resources, offering comprehensive information on the causes,
+                        symptoms,
+                        and treatment options for COVID-19, pneumonia, tuberculosis, influenza, and the common cold.
+                        Through
+                        engaging content, we aim to empower individuals to take
+                        proactive steps towards prevention, early detection, and management of the disease.
+                    </p>
+                </div>
+                <div class="sideimage">
+                    <img src="{{ url_for('static', filename='Picture1.jpg') }}" alt="">
+                </div>
+            </div>
+
+            <div id="img">
+                <div class="left">
+                    <img src="{{ url_for('static', filename='Picture2.jpg') }}" alt="">
+                </div>
+                <div class="right">
+                    <h1>Get Ready to Know Your Health...</h1>
+                    <div class="box">
+                        <h4>Are you afraid!</h4>
+                    </div>
+                    <div class="box">
+                        <h4>Worried about what disease you have!</h4>
+                    </div>
+                    <div class="box">
+                        <h4>Concerned about health!</h4>
+                    </div>
+
+                    <div class="bottom" id="bottom">
+                        <h1>Don't worry You Got Us, SymptomSmart</h1>
+                        <span id="element"></span>
+                        <h2>Upload image of your disease</h2>
+                        <form  action="/upload" method="post" enctype="multipart/form-data">
+                            <input type="file" id="image-upload" name="image" accept="image/*">
+                            <button>upload</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chatbot" id="chat">
+            <div class="chat">
+            <h2>Do You Need Help!</h2>
+            <textarea id="chat-input" placeholder="Type your message..."></textarea>
+            <br>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        </section>
+
+        <!-- <section class="data">
+            <h2>Data Section</h2>
+        </section> -->
+
+        <!-- <section class="result">
+            <h2>Result Section</h2>
+        </section> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 At-Home Diagnostic Tool</p>
+    </footer>
+
+    <!-- <script src="script.js"></script>
+    <script>
+         var typed = new Typed('#element', {
+            strings: ['Do not worry You got us', 'SymptoSmart'],
+            typeSpeed: 50,
+        });
+    </script> -->
+</body>
+
+</html>
